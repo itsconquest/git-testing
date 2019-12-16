@@ -1,7 +1,7 @@
 [
     {
       "type": 1,
-      "title": "Local test",
+      "title": "Registry",
       "description": "Docker image registry",
       "categories": ["docker"],
       "platform": "linux",
