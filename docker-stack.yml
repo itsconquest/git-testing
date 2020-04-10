@@ -2,13 +2,3 @@ version: '3'
 services:
   test:
     image: nginx
-    volumes:
-      -   ./100MB.txt:/data/100MB.txt
-      - ./100MB2.txt:/data/100MB2.txt
-      - ./100MB3.txt:/data/100MB3.txt
-      - ./100MB4.txt:/data/100MB4.txt
-      - ./100MB5.txt:/data/100MB5.txt
-      - ./100MB6.txt:/data/100MB6.txt
-      - ./100MB7.txt:/data/100MB7.txt
-      - ./100MB8.txt:/data/100MB8.txt
-      - ./100MB9.txt:/data/100MB9.txt
