@@ -2,3 +2,5 @@ version: '3'
 services:
   test:
     image: nginx
+    volumes:
+      -   ./100MB.txt:/data/100MB.txt
