@@ -3,4 +3,4 @@ services:
   test:
     image: nginx
     volumes:
-      - ./test/test.txt:/test/test.txt
+      - /var/lib/docker/volumes/portainer_data/_data/compose/1/test/test.txt:/test/test.txt
