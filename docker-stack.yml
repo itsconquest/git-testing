@@ -4,5 +4,3 @@ services:
     image: nginx
     volumes:
       - ./test/test.txt:/test/test.txt
-    secrets:
-      - mysecret
