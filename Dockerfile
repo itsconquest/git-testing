@@ -1,2 +1,2 @@
-FROM nginx
+FROM portainer/portainer
 EXPOSE 42
