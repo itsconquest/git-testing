@@ -1,0 +1,4 @@
+version: '3'
+services:
+  test:
+    image: registry.portainer.io:443/portainerwin
