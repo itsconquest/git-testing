@@ -1,7 +1,6 @@
 {
 	"version": "2",
 	"templates": [{
-		{
 			"type": 1,
 			"title": "Linux Container",
 			"description": "Template to test Linux Container Template",
@@ -19,7 +18,7 @@
 				"database"
 			],
 			"platform": "windows",
-			"image": "portainer/portainer",,
+			"image": "portainer/portainer",
 		},
 		{
 			"type": 2,
@@ -34,7 +33,7 @@
 				"stackfile": "docker-stack-3.yml"
 			}
 		},
-    {
+		{
 			"type": 2,
 			"title": "Windows Swarm Stack",
 			"description": "Template to test Windows Swarm Stack Template",
@@ -74,10 +73,10 @@
 			}
 		},
 		{
-	    "type": 4,
-	    "title": "Edge Stack",
-	    "description": "Template to test Edge Stack Template",
-	    "stackfile": "https://raw.githubusercontent.com/itsconquest/git-testing/master/docker-stack-3.yml"
-	  }
+			"type": 4,
+			"title": "Edge Stack",
+			"description": "Template to test Edge Stack Template",
+			"stackfile": "https://raw.githubusercontent.com/itsconquest/git-testing/master/docker-stack-3.yml"
+		}
 	]
 }
