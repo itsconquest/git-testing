@@ -4,4 +4,4 @@ services:
   web:
     image: nginx:latest
     volumes:
-      - /temp:/temp1
+      - /temp:/temp
