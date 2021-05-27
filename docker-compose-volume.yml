@@ -1,6 +1,0 @@
-version: '2'
-services:
-  test:
-    image: nginx
-    volumes:
-      - /var/lib/docker/volumes/portainer_data/_data/compose/1/test:/test
