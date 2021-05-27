@@ -1,0 +1,121 @@
+{
+	"version": "2",
+	"templates": [{
+			"type": 1,
+			"title": "Registry",
+			"description": "Linux Container",
+			"categories": [
+				"docker"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "registry:latest",
+			"ports": [
+				"5000/tcp"
+			],
+			"volumes": [{
+				"container": "/var/lib/registry"
+			}]
+		},
+        {
+			"type": 1,
+			"title": "Registry",
+			"description": "Windows Container",
+			"categories": [
+				"docker"
+			],
+			"platform": "windows",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "registry:latest",
+			"ports": [
+				"5000/tcp"
+			],
+			"volumes": [{
+				"container": "/var/lib/registry"
+			}]
+		},
+		{
+			"title": "Linux Swarm Stack",
+			"type": 2,
+			"categories": [
+				"Monitoring"
+			],
+			"description": "Collect events and metrics",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			},
+			"env": [{
+				"name": "API_KEY",
+				"label": "Datadog API key"
+			}]
+		},
+        {
+			"title": "Windows Swarm Stack",
+			"type": 2,
+			"categories": [
+				"Monitoring"
+			],
+			"description": "Collect events and metrics",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+			"platform": "windows",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			},
+			"env": [{
+				"name": "API_KEY",
+				"label": "Datadog API key"
+			}]
+		},
+        {
+			"type": 3,
+			"title": "Linux Standalone Stack",
+			"description": "Wordpress setup with a MySQL database",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"categories": [
+				"CMS"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			},
+			"env": [{
+				"name": "MYSQL_DATABASE_PASSWORD",
+				"label": "Database root password",
+				"description": "Password used by the MySQL root user."
+			}]
+		},
+        {
+			"type": 3,
+			"title": "Windows Standalone Stack",
+			"description": "Wordpress setup with a MySQL database",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"categories": [
+				"CMS"
+			],
+			"platform": "windows",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			},
+			"env": [{
+				"name": "MYSQL_DATABASE_PASSWORD",
+				"label": "Database root password",
+				"description": "Password used by the MySQL root user."
+			}]
+		},
+		{
+	    "type": 4,
+	    "title": "Edge Stack",
+	    "description": "Wordpress setup with a MySQL database",
+	    "note": "Deploys a Wordpress instance connected to a MySQL database.",
+	    "stackfile": "https://raw.githubusercontent.com/itsconquest/git-testing/master/docker-stack-3.yml"
+	  }
+	]
+}
