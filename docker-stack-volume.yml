@@ -1,7 +1,0 @@
-
-version: '3.4'
-services:
-  test:
-    image: nginx
-    volumes:
-      - ./test/test.txt:/test/test.txt
