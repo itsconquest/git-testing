@@ -1,0 +1,91 @@
+{
+	"version": "2",
+	"templates": [{
+			"type": 1,
+			"title": "Linux Container",
+			"description": "Linux Container",
+			"categories": [
+				"docker"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "registry:latest"
+		},
+        {
+			"type": 1,
+			"title": "Windows Container",
+			"description": "Windows Container",
+			"categories": [
+				"docker"
+			],
+			"platform": "windows",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "portainer/portainer"
+		},
+		{
+			"title": "Linux Swarm Stack",
+			"type": 2,
+			"categories": [
+				"Monitoring"
+			],
+			"description": "Linux Swarm Stack",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			}
+		},
+        {
+			"title": "Windows Swarm Stack",
+			"type": 2,
+			"categories": [
+				"Monitoring"
+			],
+			"description": "Windows Swarm Stack",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+			"platform": "windows",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-3.yml"
+			}
+		},
+        {
+			"type": 3,
+			"title": "Linux Standalone Stack",
+			"description": "Linux Standalone Stack",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"categories": [
+				"CMS"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-2.yml"
+			}
+		},
+        {
+			"type": 3,
+			"title": "Windows Standalone Stack",
+			"description": "Windows Standalone Stack",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"categories": [
+				"CMS"
+			],
+			"platform": "windows",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"repository": {
+				"url": "https://github.com/itsconquest/git-testing",
+				"stackfile": "docker-stack-2.yml"
+			}
+		},
+		{
+	    "type": 4,
+	    "title": "Edge Stack",
+	    "description": "Wordpress setup with a MySQL database",
+	    "note": "Deploys a Wordpress instance connected to a MySQL database.",
+	    "stackfile": "https://raw.githubusercontent.com/itsconquest/git-testing/master/docker-stack-3.yml"
+	  }
+	]
+}
