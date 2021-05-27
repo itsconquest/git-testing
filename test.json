@@ -16,6 +16,16 @@
 			"volumes": [{
 				"container": "/var/lib/registry"
 			}]
+		},
+		{
+			"type": 1,
+			"title": "Linux Container",
+			"description": "Template to test Linux Container Template",
+			"categories": [
+				"webserver"
+			],
+			"platform": "linux",
+			"image": "nginx:latest",
 		}
 	]
 }
