@@ -1,0 +1,14 @@
+{
+	"version": "2",
+	"templates": [{
+			"type": 1,
+			"title": "Linux Container",
+			"description": "Template to test Linux Container Template",
+			"categories": [
+				"webserver"
+			],
+			"platform": "linux",
+			"image": "nginx:latest",
+		}
+	]
+}
